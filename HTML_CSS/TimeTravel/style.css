@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Work+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Amatic SC";
+}
+
+/* Header */
+h1 {
+  font-size: 3.5rem;
+}
+
+.bg {
+  background: url("img/pyramides.jpeg");
+  width: 100%; /* Largeur souhaitée de la partie visible de l'image */
+  height: 500px; /* Hauteur souhaitée de la partie visible de l'image */
+  background-position: center;
+}
+
+.contenuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.contenuHeader > * {
+  margin: 20px;
+}
+
+/* Types */
+
+.articleType {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.articleType img {
+  width: 320px;
+}
+
+.types {
+  margin: 30px 100px;
+}
+
+.types > h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.listTypes {
+  margin: 20px 40px;
+}
+
+/* Formules */
+.sectionFormule {
+  text-align: center;
+}
+
+.sectionFormule > h2 {
+  margin-bottom: 20px;
+}
+
+.articleFormule {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.divFormule {
+  border: solid 2px darksalmon;
+  padding: 40px 10px 20px;
+}
+
+.divFormule .prix {
+  font-size: 2rem;
+  color: darksalmon;
+  padding-bottom: 20px;
+}
+.divFormule .prixPetit {
+  font-size: 1rem;
+  color: black;
+}
+
+.divFormule .typeFormule {
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.divFormule .formuleDescription {
+  padding: 20px;
+}
