@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    font-size: 'Arial';
+}
+
+.white{
+    color: #ffffff;
+}
+
+/* Accueil */ 
+
+.containerAccueil {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image: url("../img/detoxcuresmoothie.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le conteneur */
+    background-position: center; /* Centre l'image dans le conteneur */
+    color: #ffffff; 
+}
+
+.containerAccueil article div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px; 
+    color: #ffffff; 
+    text-align: right;
+}
+.containerAccueil article div a{
+    margin: 15px;
+}
+
+.containerAccueil article h1{
+    font-family: 'Playfair Display';
+    font-size: 4em;
+}
+
+/* Devise */ 
+
+.containerDevise{
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerDevise img{
+    width: 350px;
+}
+
+.containerDevise .articleDevise{
+    margin-left: 30px;
+    text-align: center;
+}
+
+.containerDevise .articleDevise p{
+    text-align: left;
+}
+
+/* Fabrication */ 
+
+.containerFabrication .articleFabrication{
+    background: rgb(247,183,195);
+    background: linear-gradient(180deg, rgba(247,183,195,1) 0%, rgba(238,162,60,1) 100%);
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout le conteneur */
+    background-position: center; /* Centre l'image dans le conteneur */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 0;
+}
+
+.containerFabrication .articleFabrication div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 35px;
+}
+
+.containerFabrication .articleFabrication div p{
+    font-size: 1em;
+    font-weight: bold;
+}
+

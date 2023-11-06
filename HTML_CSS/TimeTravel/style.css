@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Work+Sans:wght@400;700&display=swap");
 
-* {
+body {
   margin: 0;
   padding: 0;
 }
@@ -12,16 +12,23 @@ h4 {
   font-family: "Amatic SC";
 }
 
+p, 
+li,
+div{
+  font-family: "Work Sans";
+}
+
 /* Header */
 h1 {
   font-size: 3.5rem;
 }
 
-.bg {
+.bg {  
   background: url("img/pyramides.jpeg");
   width: 100%; /* Largeur souhaitée de la partie visible de l'image */
   height: 500px; /* Hauteur souhaitée de la partie visible de l'image */
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contenuHeader {
@@ -37,20 +44,20 @@ h1 {
 
 /* Types */
 
-.articleType {
+.articleType{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.articleType img {
-  width: 320px;
+.articleType img{
+  width: 300px;
 }
 
-.types {
+.types{
   margin: 30px 100px;
 }
 
-.types > h2 {
+.types > h2{
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -61,6 +68,7 @@ h1 {
 
 /* Formules */
 .sectionFormule {
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -97,4 +105,37 @@ h1 {
 
 .divFormule .formuleDescription {
   padding: 20px;
+  font-size: 0.8rem;
+}
+
+/* Concept */ 
+.sectionConcept{
+  margin-top: 20px;
+}
+
+.articleConcept {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.articleConcept img {
+  width: 300px;
+}
+
+.concept {
+  margin: 0 130px 0 30px;
+}
+
+.concept > h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.bouton{
+  margin-top: 30px;
+  color: darksalmon;
+  text-decoration:none;
+  padding: 10px 15px;
+  border: solid 2px darksalmon;
 }
