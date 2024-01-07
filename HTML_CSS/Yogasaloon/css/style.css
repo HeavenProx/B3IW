@@ -6,9 +6,10 @@
 }
 
 body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   max-width: 1060px;
-  width: 95%;
   margin: 50px auto;
+  padding: 0 20px;
 }
 
 .btn {
@@ -22,6 +23,15 @@ body {
   background-color: var(--main);
   color: #ffffff !important;
   transform: translateY(5px);
+}
+
+h2::after {
+  margin: 20px 0 40px;
+  content: "";
+  display: block;
+  width: 3px;
+  height: 50px;
+  background-color: var(--main);
 }
 
 /* Accueil */
@@ -96,14 +106,6 @@ header div.text h1 {
   font-size: 2.5rem;
   margin-top: 40px;
 }
-.containerCours h2::after {
-  margin: 20px 0 40px;
-  content: "";
-  display: block;
-  width: 3px;
-  height: 50px;
-  background-color: var(--main);
-}
 
 .containerCours .articleCours {
   display: flex;
@@ -118,13 +120,18 @@ header div.text h1 {
   margin-right: 30px;
 }
 
+
+
 /* Contact */
-.containerContact .articleContact .formContact {
+.containerContact .articleContact .formRappel {
   display: flex;
-  align-items: center; /* Aligne les éléments verticalement au centre */
-  justify-content: center; /* Aligne les éléments horizontalement au centre */
-  text-align: center; /* Aligne le texte au centre */
-  margin: 20px; /* Ajoute une marge autour du formulaire pour l'espace */
+  align-items: center; 
+  margin: 20px 0; 
+}
+.containerContact .articleContact .formRappel label{
+  margin-right: 20px;
+  
+  cursor: pointer;
 }
 
 .containerContact .articleContact .radio-container {
@@ -133,19 +140,27 @@ header div.text h1 {
   margin-right: 10px; /* Espacement entre les boutons */
 }
 
-.containerContact .articleContact .radio-container label:active {
-  color: var(--main) !important;
-  background-color: #ffffff;
-  padding: 8px 15px;
-  border-radius: 50px;
-  box-shadow: 0 3p 7px rgba(0, 0, 0, 0.2);
-}
-
 .containerContact .articleContact .radio-container input[type="radio"] {
   position: absolute;
   opacity: 0;
-  cursor: pointer;
 }
+
+.containerContact .articleContact .formInfos input{
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3) inset;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50px;
+}
+
+.containerContact .articleContact .btnSend{
+  margin: 20px 0;
+}
+
+
 
 /* Copyright */
 .articleCopyright {
@@ -154,6 +169,8 @@ header div.text h1 {
   text-align: center;
   color: white;
 }
+
+
 
 /* ---------- Responsive ------------- */
 @media screen and (min-width: 992px) {

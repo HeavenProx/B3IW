@@ -81,8 +81,7 @@
         <h2>Contact - Suivre un cours</h2>
         <article class="articleContact">
             <div class="formRappel">
-
-                <p>Être rappelé :</p>
+                <label>Être rappelé :</label>
 
                 <label class="radio-container btn">
                     <input type="radio" name="today">
@@ -98,15 +97,20 @@
                     <input type="radio" name="later">
                     <span class="custom-radio">Plus tard</span>
                 </label>
-
+            </div>
+            <div class="formInfos">
+                <input type="text" placeholder="Nom Prenom">
+                <input type="email" placeholder="Mail">
             </div>
             <div>
-                <input type="text">
-                <input type="email">
+                <label>Vous êtes intéressé par :</label> 
+                <select id="choix" name="choix">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
             </div>
-            <div>
-                <p>Vous êtes intéressé par : <input type=""></p>
-            </div>
+            <button class="btn btnSend">Envoyer</button>
         </article>
     </container>
 

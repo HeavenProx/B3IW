@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    background-color: rgb(124, 40, 99);
+    padding: 10px 15px;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(82, 23, 64);
+}
+
+main .infos .presentation img{
+    width: 48px;
+}
+
+/* Header */
+header{
+    background-image: linear-gradient(rgba(124, 40, 99, 0.4) 20%, rgba(0, 0, 0, 0.4)), url('../img/fitness.jpg');
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div{
+    text-align: center;
+    margin: 150px 0 250px;
+}
+
+header .logo {
+    width: 60px;
+}
+
+header .listMenu {
+    float: right;
+    margin: 20px;
+}
+header .listMenu li{
+    display: inline-block; 
+    padding: 10px 15px;
+}
+
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 80px;
+    margin: 0;
+    line-height: 100%;
+}
+header h2{
+    font-size: 20px;
+}
+
+
+/* Challenge */ 
+
+main .sectionChallenge{
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+    box-shadow: 0 3px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .sectionChallenge a:first-of-type{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fitnessman.jpg');
+}
+main .sectionChallenge a:last-of-type{
+    background-image: linear-gradient(rgba(124, 40, 99, 0.4), rgba(124, 40, 99, 0.4)), url('../img/fitnesswoman.jpg');
+}
+
+main .sectionChallenge a {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 30px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Infos */
+
+main .objectif{
+    text-align: center;
+    margin: 100px 0;
+}
+
+main .infos .presentation ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+main .infos .presentation li{
+    width: 25%;
+    text-align: center;
+    border-top: solid 1px gray;
+    border-right: solid 1px gray;
+    padding: 50px 0;
+}
+main .infos .presentation li:last-of-type {
+    border-right: none;
+}
+
+
+/* Fitclub */
+
+main .fitclub {
+    background-image: linear-gradient(
+        to right,
+        rgba(124, 40, 99, 0.5) 55%,
+        black 45%
+    ),
+    url(../img/crossfit.jpg);
+    background-size: cover;
+    background-position: center 35%;
+    color: white;
+    padding: 50px 0 80px;
+}
+
+main .fitclub div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    max-width: 1060px;
+    margin: auto; 
+}
+
+main .fitclub .autrement {
+    width: 40%;
+}
+
+main .fitclub .autrement h2{
+    margin-left: -80px;
+}
+
+main .fitclub .autrement p,
+main .fitclub .autrement button
+ {
+    margin: 0 0 40px 20px;
+}
+
+
+
+
+/* Responsive */ 
+@media screen and (max-width:767px){
+    main .sectionChallenge{
+        width: 90%;
+    }
+    main .sectionChallenge a {
+        width: 100%;
+    }
+
+    main .infos .presentation ul li{
+        width: 50%;
+    }
+
+    main .fitclub{
+        background: black;
+    }
+    main .fitclub .autrement {
+        width: 100%;
+        padding: 80px;
+    }
+    main .fitclub .autrement h2{
+        margin-left: 0;
+    }
+}
