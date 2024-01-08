@@ -161,9 +161,87 @@ main .fitclub .autrement button
 }
 
 
+/* Services */
+
+main .service ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+main .service ul li{
+    width: 33.33%;
+    text-align: center;
+    padding: 80px;
+}
+
+main .service ul li img{
+    width: 48px;
+}
+
+main .service ul li:nth-child(odd){
+    background-color: rgba(50, 50, 50, 0.1);
+}
 
 
-/* Responsive */ 
+/* Footer */
+
+footer {
+    background-color: black;
+    border-top: 10px solid rgba(124, 40, 99, 0.5);
+    padding: 20px 0;
+    color: black;
+    font-size: 15px;
+}
+
+footer:nth-child(odd){
+    color: white;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .reseaux {
+    width: 25%;
+    text-align: right;
+}
+footer .reseaux img {
+    width: 60px;
+}
+footer .reseaux a {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+footer .nousContacter{
+    width: 45%;
+    background-color: white;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 3px 10px black;
+}
+
+footer .nousContacter input:not([type="submit"]){
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+
+
+
+
+/* Responsive téléphone */ 
 @media screen and (max-width:767px){
     main .sectionChallenge{
         width: 90%;
@@ -185,5 +263,25 @@ main .fitclub .autrement button
     }
     main .fitclub .autrement h2{
         margin-left: 0;
+    }
+
+    main .service ul li{
+        width: 100%;
+    }
+}
+
+
+/* Responsive tablette */ 
+@media screen and (max-width:1220px){
+    main .service ul li{
+        width: 50%;
+    } 
+    main .service ul li:nth-of-type(2),
+    main .service ul li:nth-of-type(3),
+    main .service ul li:nth-of-type(6){
+        background-color: white;
+    }
+    main .service ul li:nth-of-type(4){
+        background-color: rgba(50, 50, 50, 0.1);
     }
 }
